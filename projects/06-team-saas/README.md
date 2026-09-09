@@ -13,6 +13,7 @@ Replace the in-memory adapters with PostgreSQL, a queue, and your observability 
 
 ## Open while building
 
+- Combine the [multi-tenancy chapter](../../learn/backend-data/#7-multi-tenancy) with the [reliable service playbook](../../learn/systems-devops/#level-2--reliable-service).
 - [PostgreSQL row security](https://www.postgresql.org/docs/current/ddl-rowsecurity.html) for optional tenant defense in depth.
 - [Transactional Outbox](https://microservices.io/patterns/data/transactional-outbox.html) for consistent database writes and emitted work.
 - [Stripe idempotent requests](https://docs.stripe.com/api/idempotent_requests) for a concrete retry-safe write contract.

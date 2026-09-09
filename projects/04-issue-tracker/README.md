@@ -12,6 +12,7 @@ Open `http://localhost:3004`, sign in as `alice@example.test` or `bob@example.te
 
 ## Open while building
 
+- Use the [Next.js product frontend route](../../learn/web-frontend/#level-3--nextjs-product-frontend) with the [authentication and authorization chapters](../../learn/backend-data/#4-authentication).
 - [Next.js App Router](https://nextjs.org/docs/app) for routing, data access, metadata, and server/client boundaries.
 - [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) for deny-by-default access rules.
 - [OWASP Session Management](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html) for cookies, expiry, and invalidation.

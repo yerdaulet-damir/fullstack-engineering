@@ -22,6 +22,7 @@ The Python and Java paths, dependencies, folder shapes, and checks are in [`alte
 
 ## Open while building
 
+- Start with the [backend and data engineering playbook](../../learn/backend-data/) for HTTP, SQL, framework routes, and testing.
 - [MDN HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) for request and response semantics.
 - [OpenAPI](https://spec.openapis.org/oas/latest.html) for the API contract.
 - [PostgreSQL tutorial](https://www.postgresql.org/docs/current/tutorial.html) for SQL and relational basics.

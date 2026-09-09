@@ -2,11 +2,22 @@
   <img src="assets/fullstack-engineering-poster.jpg" alt="Build the whole thing: a climber crossing a mountain ridge above the clouds" width="100%" />
 </p>
 
-# Full-Stack Engineering Roadmap — From HTML to Production AI
+# Full-Stack Engineering — From HTML to Production AI
 
-Build the same support product in eight increasingly serious versions. You begin with HTML and CSS, then add TypeScript, React, an API, PostgreSQL, Next.js, authentication, realtime updates, multi-tenancy, RAG, evals, AI tools, and human approval.
+Build the same support product as eight runnable software projects. You begin with HTML and CSS, then add TypeScript, React, an API, PostgreSQL, Next.js, authentication, realtime updates, multi-tenancy, RAG, evals, AI tools, and human approval.
 
-This README tells you where to start. [`RESOURCES.md`](./RESOURCES.md) keeps the full list of documentation and repositories.
+This README is the map. The [learning playbooks](./learn/) contain the explanations, books, courses, videos, repositories, build milestones, and proof checks.
+
+## Learning playbooks
+
+| Playbook | What it teaches | Projects |
+| --- | --- | --- |
+| [Web frontend engineering](./learn/web-frontend/) | Browser fundamentals, TypeScript, React, Next.js, accessibility, testing, performance | 01, 02, 04 |
+| [Backend and data engineering](./learn/backend-data/) | HTTP, API design, PostgreSQL, Fastify, FastAPI, Spring Boot, auth, multi-tenancy | 03, 04, 06 |
+| [Systems and DevOps](./learn/systems-devops/) | WebSockets, Redis, queues, idempotency, Docker, CI, observability, SRE | 05, 06, 08 |
+| [Applied AI engineering](./learn/ai-engineering/) | LLM APIs, structured output, RAG, evals, agents, MCP, model internals | 07, 08 |
+
+Each playbook follows **Read → Watch → Build → Prove**. The repository explains the mechanism first; external documentation is supporting material rather than the curriculum.
 
 ## Pick your starting point
 
@@ -14,18 +25,15 @@ You do not need to read everything first. Open one useful source, then build the
 
 | If you want to learn | Open first | Build next |
 |---|---|---|
-| HTML, CSS, browser JavaScript | [MDN Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) · [web.dev Learn CSS](https://web.dev/learn/css/) | [01 — responsive launch page](./projects/01-launch-page/) |
-| JavaScript and TypeScript | [JavaScript.info](https://javascript.info/) · [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/) | [02 — React data dashboard](./projects/02-data-dashboard/) |
-| React frontend development | [Thinking in React](https://react.dev/learn/thinking-in-react) · [Testing Library](https://testing-library.com/docs/guiding-principles/) | [02 — React data dashboard](./projects/02-data-dashboard/) |
-| Backend development with Node.js | [MDN HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) · [Fastify](https://fastify.dev/docs/latest/) · [OpenAPI](https://spec.openapis.org/oas/latest.html) | [03 — PostgreSQL issue API](./projects/03-issue-api/) |
-| Backend development with Python | [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/) · [Pydantic](https://docs.pydantic.dev/latest/) | [03 — use the FastAPI route](./projects/03-issue-api/alternative-backends.md#python-and-fastapi) |
-| Backend development with Java | [Spring Boot](https://docs.spring.io/spring-boot/index.html) · [Spring guides](https://spring.io/guides) | [03 — use the Spring Boot route](./projects/03-issue-api/alternative-backends.md#java-and-spring-boot) |
-| SQL and PostgreSQL | [PostgreSQL tutorial](https://www.postgresql.org/docs/current/tutorial.html) · [Use EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html) | [03 — PostgreSQL issue API](./projects/03-issue-api/) |
-| Next.js full-stack development | [Next.js App Router](https://nextjs.org/docs/app) · [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) | [04 — authenticated issue tracker](./projects/04-issue-tracker/) |
-| Realtime and system design | [MDN WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) · [Redis Streams](https://redis.io/docs/latest/develop/data-types/streams/) | [05 — live board](./projects/05-live-board/) |
-| SaaS backend and DevOps | [Docker Get Started](https://docs.docker.com/get-started/) · [OpenTelemetry](https://opentelemetry.io/docs/what-is-opentelemetry/) | [06 — multi-tenant team SaaS](./projects/06-team-saas/) |
-| AI engineering, RAG and evals | [OpenAI evals](https://platform.openai.com/docs/guides/evals) · [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | [07 — support copilot](./projects/07-support-copilot/) |
-| AI agents, tools and MCP | [MCP architecture](https://modelcontextprotocol.io/docs/learn/architecture) · [OWASP GenAI Top 10](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) | [08 — production operator](./projects/08-production-operator/) |
+| HTML, CSS, browser JavaScript | [Web foundations](./learn/web-frontend/#level-1--web-foundations) | [01 — responsive launch page](./projects/01-launch-page/) |
+| JavaScript, TypeScript and React | [Typed React interfaces](./learn/web-frontend/#level-2--typed-react-interfaces) | [02 — React data dashboard](./projects/02-data-dashboard/) |
+| Node.js, Python or Java backend | [Server implementation routes](./learn/backend-data/#3-server-implementation-routes) | [03 — PostgreSQL issue API](./projects/03-issue-api/) |
+| SQL and PostgreSQL | [SQL and PostgreSQL](./learn/backend-data/#2-sql-and-postgresql) | [03 — PostgreSQL issue API](./projects/03-issue-api/) |
+| Next.js, sessions and authorization | [Full-stack frontend](./learn/web-frontend/#level-3--nextjs-product-frontend) · [authorization](./learn/backend-data/#5-authorization) | [04 — authenticated issue tracker](./projects/04-issue-tracker/) |
+| Realtime and system design | [Realtime foundations](./learn/systems-devops/#level-1--realtime-foundations) | [05 — live board](./projects/05-live-board/) |
+| SaaS backend and DevOps | [Reliable services](./learn/systems-devops/#level-2--reliable-service) · [multi-tenancy](./learn/backend-data/#7-multi-tenancy) | [06 — multi-tenant team SaaS](./projects/06-team-saas/) |
+| AI engineering, RAG and evals | [Applied AI engineering](./learn/ai-engineering/) | [07 — support copilot](./projects/07-support-copilot/) |
+| AI agents, tools and MCP | [Tools, MCP and durable workflows](./learn/ai-engineering/#level-3--tools-and-bounded-agents) | [08 — production operator](./projects/08-production-operator/) |
 | Vibe coding with verification | [Codex docs](https://developers.openai.com/codex/) · [Claude Code workflows](https://docs.anthropic.com/en/docs/claude-code/common-workflows) · [Google code review guide](https://google.github.io/eng-practices/review/) | [Use the AI playbook on any project](./playbook/ai-assisted-development.md) |
 
 ## Build the product

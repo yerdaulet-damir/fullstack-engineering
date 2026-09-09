@@ -24,6 +24,7 @@ Read `brief.md`, then use `acceptance.md` and `exercises.md`.
 
 ## Open while building
 
+- Start with the [applied AI engineering playbook](../../learn/ai-engineering/) for streaming, structured output, RAG, evals, and injection boundaries.
 - [OpenAI Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs) for schema-constrained model responses.
 - [OpenAI evals](https://platform.openai.com/docs/guides/evals) for datasets, graders, and regression runs.
 - [Anthropic tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) for another provider's tool contract.

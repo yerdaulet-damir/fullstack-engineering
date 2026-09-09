@@ -13,6 +13,7 @@ Start with [`brief.md`](brief.md), then make every check in [`acceptance.md`](ac
 
 ## Open while building
 
+- Start with the [realtime foundations playbook](../../learn/systems-devops/#level-1--realtime-foundations) before choosing transport and persistence.
 - [MDN WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) for the browser connection lifecycle.
 - [WebSocket Protocol](https://www.rfc-editor.org/rfc/rfc6455) when transport behavior is unclear.
 - [AWS retries and backoff](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for bounded retries and jitter.

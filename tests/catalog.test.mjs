@@ -17,6 +17,16 @@ test("the ladder has eight ordered projects", () => {
   assert.deepEqual(catalog.map((project) => project.id), ["01", "02", "03", "04", "05", "06", "07", "08"]);
 });
 
+test("the learning index and four domain playbooks exist", async () => {
+  await Promise.all([
+    access(new URL("learn/README.md", root)),
+    access(new URL("learn/web-frontend/README.md", root)),
+    access(new URL("learn/backend-data/README.md", root)),
+    access(new URL("learn/systems-devops/README.md", root)),
+    access(new URL("learn/ai-engineering/README.md", root))
+  ]);
+});
+
 for (const project of catalog) {
   test(`${project.id} has a brief, acceptance checks, exercises, and starter code`, async () => {
     const base = new URL(`projects/${project.id}-${project.slug}/`, root);

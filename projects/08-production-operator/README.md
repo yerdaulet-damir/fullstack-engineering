@@ -13,6 +13,7 @@ The starter stores plain JSON so restart behavior is visible. Replace it with du
 
 ## Open while building
 
+- Use the [durable agent route](../../learn/ai-engineering/#level-4--durable-workflows-and-human-approval) with the [production operations route](../../learn/systems-devops/#level-3--production-operation).
 - [MCP architecture](https://modelcontextprotocol.io/docs/learn/architecture) for hosts, clients, servers, tools, resources, and transport.
 - [MCP security](https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices) for authorization and token boundaries.
 - [OWASP GenAI Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) for excessive agency and resource-consumption risks.

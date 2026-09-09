@@ -15,6 +15,7 @@ The fake API fails every third request. Search for `TODO` to find the learner wo
 
 ## Open while building
 
+- Start with the original explanations and proof checklist in the [typed React playbook](../../learn/web-frontend/#level-2--typed-react-interfaces).
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/) for types, narrowing, and modules.
 - [Thinking in React](https://react.dev/learn/thinking-in-react) for component and state boundaries.
 - [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect) before adding another effect.

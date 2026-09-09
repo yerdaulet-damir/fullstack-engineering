@@ -14,6 +14,7 @@ The page works now. The marked `TODO` items are the learner exercises, not setup
 
 ## Open while building
 
+- Start with the original explanations and build checklist in the [web frontend playbook](../../learn/web-frontend/#level-1--web-foundations).
 - [MDN Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) for semantic HTML, CSS, forms, and browser JavaScript.
 - [web.dev Learn CSS](https://web.dev/learn/css/) for layout and responsive behavior.
 - [MDN accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility) for keyboard, focus, labels, and media checks.
