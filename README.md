@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/fullstack-engineering-poster.jpg" alt="Build the whole thing: a climber crossing a mountain ridge above the clouds" width="100%" />
+  <img src="assets/fullstack-engineering-poster.png" alt="Build the whole thing: a climber crossing a mountain ridge above the clouds" width="100%" />
 </p>
 
 # Full-Stack Engineering — From HTML to Production AI
