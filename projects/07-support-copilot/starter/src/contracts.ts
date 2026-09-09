@@ -2,6 +2,7 @@ export type CorpusDocument = {
   id: string;
   title: string;
   text: string;
+  approvedAnswer: string;
   version: string;
 };
 
@@ -18,7 +19,7 @@ export type ModelInput = {
 
 export type ModelOutput = {
   answer: string;
-  citationIds: string[];
+  citations: Array<{ documentId: string; version: string }>;
   grounded: boolean;
 };
 

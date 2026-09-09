@@ -17,7 +17,7 @@ let failed = 0;
 for (const fixture of fixtures) {
   const output = await copilot.answer(fixture.query);
   const passes =
-    (!fixture.expectCitation || output.citationIds.includes(fixture.expectCitation)) &&
+    (!fixture.expectCitation || output.citations.some((citation) => citation.documentId === fixture.expectCitation && citation.version === "v1")) &&
     (!fixture.expectText || output.answer.includes(fixture.expectText)) &&
     (!fixture.expectRefusal || !output.grounded) &&
     (!fixture.forbidText || !output.answer.includes(fixture.forbidText));

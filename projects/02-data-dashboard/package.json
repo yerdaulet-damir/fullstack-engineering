@@ -1,5 +1,5 @@
 {
-  "name": "02-data-dashboard",
+  "name": "@modern-fullstack/data-dashboard",
   "version": "0.1.0",
   "private": true,
   "type": "module",

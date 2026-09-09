@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/fullstack-engineering-poster.png" alt="Build the whole thing: a climber crossing a mountain ridge above the clouds" width="100%" />
+  <img src="https://raw.githubusercontent.com/yerdaulet-damir/fullstack-engineering/main/assets/fullstack-engineering-poster.png" alt="Build the whole thing: a climber crossing a mountain ridge above the clouds" width="100%" />
 </p>
 
 # Full-Stack Engineering — From HTML to Production AI
@@ -38,18 +38,18 @@ You do not need to read everything first. Open one useful source, then build the
 
 ## Build the product
 
-Each folder has runnable code, a product brief, acceptance checks, exercises, and tests. Click a project title to see its exact commands and references.
+Each folder has runnable code, a product brief, acceptance checks, exercises, and tests. Projects 04–08 include a browser product surface rather than a domain-only code sample. Click a project title to see the architecture, implemented scope, local-only boundaries, and exact commands.
 
 | # | Project | What you build | Main engineering work |
 |---|---|---|---|
 | 01 | [Responsive launch page](./projects/01-launch-page/) | A fast, accessible product page from a visual brief | Semantic HTML, CSS layout, browser JavaScript, accessibility, performance |
 | 02 | [React data dashboard](./projects/02-data-dashboard/) | A typed dashboard that survives an unreliable API | React, TypeScript, forms, runtime validation, loading and error states, tests |
 | 03 | [PostgreSQL issue API](./projects/03-issue-api/) | A documented REST API with real data constraints | HTTP, Fastify, SQL, migrations, transactions, indexes, integration tests |
-| 04 | [Authenticated issue tracker](./projects/04-issue-tracker/) | A Next.js product with accounts and uploads | Server/client boundaries, sessions, authorization, optimistic UI, storage |
-| 05 | [Realtime live board](./projects/05-live-board/) | A multi-user board that survives reconnects | WebSockets, ordering, idempotency, presence, conflict handling |
-| 06 | [Multi-tenant team SaaS](./projects/06-team-saas/) | One deployment serving isolated organizations | Tenancy, RBAC, queues, webhooks, rate limits, audit logs, observability |
-| 07 | [Support copilot](./projects/07-support-copilot/) | An assistant grounded in versioned product documentation | Streaming, structured output, retrieval, tools, evals, injection tests, cost |
-| 08 | [Production AI operator](./projects/08-production-operator/) | A durable agent that asks before changing data | State machines, approval, tool boundaries, MCP, retries, deployment, rollback |
+| 04 | [Authenticated issue tracker](./projects/04-issue-tracker/) | A Next.js App Router product with accounts, issues, and upload preparation | Server/client boundaries, HTTP-only sessions, owner-scoped authorization, accessible mutation states |
+| 05 | [Realtime live board](./projects/05-live-board/) | A browser board with a dependency-free WebSocket server | Ordering, resume, idempotency, presence leases, stale-write handling, load probe |
+| 06 | [Multi-tenant team SaaS](./projects/06-team-saas/) | A browser admin surface and API serving isolated organizations | Tenant-scoped storage, RBAC, retry queues, webhooks, dead letters, audit history |
+| 07 | [Support copilot](./projects/07-support-copilot/) | A browser RAG lab grounded in versioned product documentation | Streaming NDJSON, retrieval evidence, citations, evals, injection tests, refusal behavior |
+| 08 | [Production AI operator](./projects/08-production-operator/) | A persisted approval console for bounded agent writes | Exact proposal digests, tool permissions, idempotent writes, crash recovery, MCP boundary |
 
 Start at project 01 if the browser is new to you. Start at 03 if you already ship React apps. Start at 07 only if APIs, SQL, authentication, and background jobs are familiar.
 

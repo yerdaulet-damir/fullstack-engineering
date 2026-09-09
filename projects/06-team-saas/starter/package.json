@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node src/demo.mjs",
+    "dev": "node --watch src/server.mjs",
+    "start": "node src/server.mjs",
+    "demo": "node src/demo.mjs",
     "check:starter": "node --test test/*.test.mjs"
   }
 }

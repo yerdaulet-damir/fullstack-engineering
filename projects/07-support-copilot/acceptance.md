@@ -8,3 +8,7 @@ Run `pnpm check:starter` inside `starter`.
 - Every supported answer cites a corpus document and version.
 - The model receives retrieved evidence but cannot call tools.
 - The starter runs without credentials or a provider SDK.
+- `pnpm dev` serves an accessible browser interface on port `3007`.
+- `POST /api/answer` validates the query and streams NDJSON events.
+- The interface renders retrieved documents before the final answer and shows grounded/refused status.
+- HTTP tests verify the page, health metadata, validation, and event order.

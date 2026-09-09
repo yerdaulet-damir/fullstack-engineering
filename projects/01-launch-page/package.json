@@ -1,5 +1,5 @@
 {
-  "name": "01-launch-page",
+  "name": "@modern-fullstack/launch-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {

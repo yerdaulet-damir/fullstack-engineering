@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Relay Support Board</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Project 05 · realtime system</p>
+        <h1>Relay support board</h1>
+      </div>
+      <dl class="telemetry" aria-label="Connection details">
+        <div><dt>Status</dt><dd id="status" data-state="connecting">connecting</dd></div>
+        <div><dt>Sequence</dt><dd id="sequence">0</dd></div>
+        <div><dt>Pending</dt><dd id="pending">0</dd></div>
+      </dl>
+    </header>
+
+    <main>
+      <section class="presence-panel" aria-labelledby="presence-title">
+        <div>
+          <p class="eyebrow">Renewable leases</p>
+          <h2 id="presence-title">Active agents</h2>
+        </div>
+        <ul id="presence" aria-live="polite"></ul>
+      </section>
+
+      <p id="notice" class="notice" role="status" aria-live="polite">Connecting to the board.</p>
+      <section id="board" class="board" aria-label="Support issues"></section>
+    </main>
+
+    <template id="column-template">
+      <section class="column">
+        <header><h2></h2><span class="count"></span></header>
+        <div class="card-list"></div>
+      </section>
+    </template>
+
+    <template id="card-template">
+      <article class="card" draggable="true" tabindex="0">
+        <div class="card-meta"><span class="card-id"></span><span class="priority"></span></div>
+        <h3></h3>
+        <footer><span class="version"></span><label>Move <select aria-label="Move card"></select></label></footer>
+      </article>
+    </template>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

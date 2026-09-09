@@ -1,5 +1,11 @@
-import { TeamSaas } from "./saas.mjs";
+import { createTeamSaas } from "./service.mjs";
 
-const app = new TeamSaas();
-app.createIssue({ tenantId: "acme", role: "member", title: "Export failed", actorId: "user-1" });
-console.log(app.listIssues({ tenantId: "acme", role: "viewer" }));
+const app = createTeamSaas();
+const alice = { tenantId: "acme", userId: "alice" };
+const bob = { tenantId: "globex", userId: "bob" };
+
+console.log("Acme issues:", app.listIssues(alice));
+console.log("Globex issues:", app.listIssues(bob));
+console.log("Queued digest:", app.queueDigest(alice, { idempotencyKey: "demo-digest" }));
+console.log("Processed job:", await app.runNextJob(alice));
+console.log("Acme audit:", app.listAudit(alice));

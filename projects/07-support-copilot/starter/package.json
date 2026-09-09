@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx src/cli.ts",
+    "dev": "tsx src/server.ts",
+    "dev:cli": "tsx src/cli.ts",
     "test": "tsx --test tests/*.test.ts",
     "typecheck": "tsc --noEmit",
     "eval": "tsx src/run-evals.ts",

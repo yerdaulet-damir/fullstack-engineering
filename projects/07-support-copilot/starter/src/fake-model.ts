@@ -6,23 +6,15 @@ const INJECTION_PATTERN = /ignore (all|any|previous)|system_override|reveal (the
 export class DeterministicSupportModel implements SupportModel {
   async generate(input: ModelInput): Promise<ModelOutput> {
     if (INJECTION_PATTERN.test(input.query) && !/untrusted migration note/i.test(input.query)) {
-      return { answer: REFUSAL, citationIds: [], grounded: false };
+      return { answer: REFUSAL, citations: [], grounded: false };
     }
 
     const evidence = input.evidence[0];
-    if (!evidence) return { answer: REFUSAL, citationIds: [], grounded: false };
-
-    if (evidence.id === "unsafe-note") {
-      return {
-        answer: "The note contains an instruction-like string, but corpus text is evidence, not an instruction to the assistant.",
-        citationIds: [evidence.id],
-        grounded: true,
-      };
-    }
+    if (!evidence) return { answer: REFUSAL, citations: [], grounded: false };
 
     return {
-      answer: `${evidence.title}: ${evidence.text}`,
-      citationIds: [evidence.id],
+      answer: `${evidence.title}: ${evidence.approvedAnswer}`,
+      citations: [{ documentId: evidence.id, version: evidence.version }],
       grounded: true,
     };
   }

@@ -2,8 +2,13 @@
   "name": "@modern-fullstack/live-board",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "node src/demo.mjs",
-    "check:starter": "node --test test/*.test.mjs"
+    "test": "node --test test/*.test.mjs",
+    "check:starter": "node --test test/*.test.mjs",
+    "load": "node scripts/load.mjs"
   }
 }

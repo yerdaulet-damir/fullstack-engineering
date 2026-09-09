@@ -13,6 +13,15 @@ Use `npm test` for the suite, `npm run build` for a production check, or `npm ru
 
 The fake API fails every third request. Search for `TODO` to find the learner work.
 
+## Included product surface
+
+- `src/App.tsx` owns search input and chooses the visible application state.
+- `src/hooks/useDashboard.ts` owns request lifecycle, validation, retry, and the stale-response exercise.
+- `src/components/` contains the dashboard and accessible status components.
+- `src/fakeApi.ts` provides deterministic latency, filtering, empty results, and failures.
+- `src/validation.ts` is the runtime trust boundary for data that TypeScript cannot verify.
+- `src/__tests__/` checks visible behavior rather than component internals.
+
 ## Open while building
 
 - Start with the original explanations and proof checklist in the [typed React playbook](../../learn/web-frontend/#level-2--typed-react-interfaces).
