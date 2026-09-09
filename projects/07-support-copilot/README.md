@@ -21,3 +21,13 @@ The CLI writes newline-delimited events, so a UI can render retrieval progress a
 - Pipeline: `starter/src/copilot.ts`
 
 Read `brief.md`, then use `acceptance.md` and `exercises.md`.
+
+## Open while building
+
+- [OpenAI Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs) for schema-constrained model responses.
+- [OpenAI evals](https://platform.openai.com/docs/guides/evals) for datasets, graders, and regression runs.
+- [Anthropic tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) for another provider's tool contract.
+- [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) before adding autonomy.
+- [OWASP GenAI Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) for prompt injection and data-leakage checks.
+
+After the eval and injection suites pass, continue to [08 — production AI operator](../08-production-operator/).

@@ -1,14 +1,51 @@
 <p align="center">
-  <img src="assets/project-ladder.svg" alt="Eight projects from browser fundamentals to a production AI operator" width="100%" />
+  <img src="assets/project-ladder.svg" alt="Full-stack engineering roadmap with eight projects from HTML and CSS to production AI agents" width="100%" />
 </p>
 
-# Production Full-Stack Engineering with AI
+# Full-Stack Engineering Roadmap — From HTML to Production AI
 
-Build one support product eight times. Start with the page, then own its React interface, API, PostgreSQL data, authentication, realtime behavior, background jobs, deployment, AI features, evals, and coding-agent workflow.
+Build the same support product in eight increasingly serious versions. You begin with HTML and CSS, then add TypeScript, React, an API, PostgreSQL, Next.js, authentication, realtime updates, multi-tenancy, RAG, evals, AI tools, and human approval.
 
-Every stage has runnable starter code, tests that expose the missing behavior, a finished-product contract, and a short list of sources worth opening while you work.
+This README tells you where to start. [`RESOURCES.md`](./RESOURCES.md) keeps the full list of documentation and repositories.
 
-## Start here
+## Pick your starting point
+
+You do not need to read everything first. Open one useful source, then build the linked project.
+
+| If you want to learn | Open first | Build next |
+|---|---|---|
+| HTML, CSS, browser JavaScript | [MDN Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) · [web.dev Learn CSS](https://web.dev/learn/css/) | [01 — responsive launch page](./projects/01-launch-page/) |
+| JavaScript and TypeScript | [JavaScript.info](https://javascript.info/) · [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/) | [02 — React data dashboard](./projects/02-data-dashboard/) |
+| React frontend development | [Thinking in React](https://react.dev/learn/thinking-in-react) · [Testing Library](https://testing-library.com/docs/guiding-principles/) | [02 — React data dashboard](./projects/02-data-dashboard/) |
+| Backend development with Node.js | [MDN HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) · [Fastify](https://fastify.dev/docs/latest/) · [OpenAPI](https://spec.openapis.org/oas/latest.html) | [03 — PostgreSQL issue API](./projects/03-issue-api/) |
+| Backend development with Python | [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/) · [Pydantic](https://docs.pydantic.dev/latest/) | [03 — use the FastAPI route](./projects/03-issue-api/alternative-backends.md#python-and-fastapi) |
+| Backend development with Java | [Spring Boot](https://docs.spring.io/spring-boot/index.html) · [Spring guides](https://spring.io/guides) | [03 — use the Spring Boot route](./projects/03-issue-api/alternative-backends.md#java-and-spring-boot) |
+| SQL and PostgreSQL | [PostgreSQL tutorial](https://www.postgresql.org/docs/current/tutorial.html) · [Use EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html) | [03 — PostgreSQL issue API](./projects/03-issue-api/) |
+| Next.js full-stack development | [Next.js App Router](https://nextjs.org/docs/app) · [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) | [04 — authenticated issue tracker](./projects/04-issue-tracker/) |
+| Realtime and system design | [MDN WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) · [Redis Streams](https://redis.io/docs/latest/develop/data-types/streams/) | [05 — live board](./projects/05-live-board/) |
+| SaaS backend and DevOps | [Docker Get Started](https://docs.docker.com/get-started/) · [OpenTelemetry](https://opentelemetry.io/docs/what-is-opentelemetry/) | [06 — multi-tenant team SaaS](./projects/06-team-saas/) |
+| AI engineering, RAG and evals | [OpenAI evals](https://platform.openai.com/docs/guides/evals) · [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | [07 — support copilot](./projects/07-support-copilot/) |
+| AI agents, tools and MCP | [MCP architecture](https://modelcontextprotocol.io/docs/learn/architecture) · [OWASP GenAI Top 10](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) | [08 — production operator](./projects/08-production-operator/) |
+| Vibe coding with verification | [Codex docs](https://developers.openai.com/codex/) · [Claude Code workflows](https://docs.anthropic.com/en/docs/claude-code/common-workflows) · [Google code review guide](https://google.github.io/eng-practices/review/) | [Use the AI playbook on any project](./playbook/ai-assisted-development.md) |
+
+## Build the product
+
+Each folder has runnable code, a product brief, acceptance checks, exercises, and tests. Click a project title to see its exact commands and references.
+
+| # | Project | What you build | Main engineering work |
+|---|---|---|---|
+| 01 | [Responsive launch page](./projects/01-launch-page/) | A fast, accessible product page from a visual brief | Semantic HTML, CSS layout, browser JavaScript, accessibility, performance |
+| 02 | [React data dashboard](./projects/02-data-dashboard/) | A typed dashboard that survives an unreliable API | React, TypeScript, forms, runtime validation, loading and error states, tests |
+| 03 | [PostgreSQL issue API](./projects/03-issue-api/) | A documented REST API with real data constraints | HTTP, Fastify, SQL, migrations, transactions, indexes, integration tests |
+| 04 | [Authenticated issue tracker](./projects/04-issue-tracker/) | A Next.js product with accounts and uploads | Server/client boundaries, sessions, authorization, optimistic UI, storage |
+| 05 | [Realtime live board](./projects/05-live-board/) | A multi-user board that survives reconnects | WebSockets, ordering, idempotency, presence, conflict handling |
+| 06 | [Multi-tenant team SaaS](./projects/06-team-saas/) | One deployment serving isolated organizations | Tenancy, RBAC, queues, webhooks, rate limits, audit logs, observability |
+| 07 | [Support copilot](./projects/07-support-copilot/) | An assistant grounded in versioned product documentation | Streaming, structured output, retrieval, tools, evals, injection tests, cost |
+| 08 | [Production AI operator](./projects/08-production-operator/) | A durable agent that asks before changing data | State machines, approval, tool boundaries, MCP, retries, deployment, rollback |
+
+Start at project 01 if the browser is new to you. Start at 03 if you already ship React apps. Start at 07 only if APIs, SQL, authentication, and background jobs are familiar.
+
+## Run it
 
 ```bash
 git clone https://github.com/yerdaulet-damir/fullstack-engineering.git
@@ -20,109 +57,76 @@ cp .progress.example.json .progress.json
 pnpm next
 ```
 
-You need Node.js 22+, pnpm 10+, Git, and Docker for the database projects. An AI API key is only needed in projects 7 and 8; both include a deterministic fake provider so you can work without credits.
+Requirements: Node.js 22+, pnpm 10+, Git, and Docker for database projects. Projects 07 and 08 include deterministic fake model providers, so an AI API key is optional.
 
-## The project ladder
+Your first useful move:
 
-| # | Product | You ship | Main skills | Proof |
-|---|---|---|---|---|
-| 01 | Launch page | Responsive product page from a visual brief | Semantic HTML, CSS, browser JavaScript, accessibility, performance | Lighthouse report and deployed URL |
-| 02 | Data dashboard | Typed React dashboard consuming an unreliable API | React, TypeScript, forms, caching, loading and error states | Component tests and recorded failure states |
-| 03 | Issue API | PostgreSQL-backed REST API | HTTP, validation, SQL, migrations, transactions, indexes, integration tests | OpenAPI contract and passing API tests |
-| 04 | Issue tracker | Full-stack application with accounts and uploads | Next.js, sessions, authorization, optimistic UI, object storage | Two-user authorization test and deployment |
-| 05 | Live board | Multi-user board that survives reconnects | WebSockets, presence, ordering, idempotency, conflict handling | Two-browser demo and reconnect test |
-| 06 | Team SaaS | Multi-tenant product with jobs and audit history | Tenancy, RBAC, queues, email, rate limits, observability | Tenant-isolation suite and traced background job |
-| 07 | Support copilot | AI assistant grounded in product documentation | Streaming, structured output, retrieval, tools, evals, cost control | Eval report, prompt-injection tests, latency budget |
-| 08 | Production operator | AI workflow that proposes actions and asks before writing | Durable workflows, approval, MCP/tool boundaries, deployment, incident handling | Staging runbook, rollback drill, public capstone |
+```bash
+cd projects/01-launch-page
+npm start
+```
 
-Open [`ROADMAP.md`](./ROADMAP.md) for exact deliverables. Run `pnpm next` at any time to see the next unfinished project.
+Open `http://localhost:3001`, use the page, then read [`brief.md`](./projects/01-launch-page/brief.md). Run `npm test` before and after your change.
 
-## Why this stack
+## Repositories worth opening
 
-- TypeScript became GitHub's most-used language in 2025; it covers the browser, server, tests, tooling, and most AI SDKs in one typed codebase.
-- PostgreSQL keeps SQL, transactions, indexes, and tenant boundaries visible instead of hiding them behind a hosted dashboard.
-- Docker had the largest year-over-year usage increase in the 2025 Stack Overflow survey; projects 03–08 use it where local infrastructure matters.
-- AI-assisted coding is included because 84% of surveyed developers use or plan to use AI tools, while 66% report output that is almost right. The exercises focus on review, tests, debugging, and rollback.
+These are references, not content copied into this repository.
 
-Sources: [GitHub Octoverse 2025](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/), [Stack Overflow 2025 technology](https://survey.stackoverflow.co/2025/technology), and [Stack Overflow 2025 AI](https://survey.stackoverflow.co/2025/ai).
+| Repository | Use it for |
+|---|---|
+| [The Odin Project curriculum](https://github.com/TheOdinProject/curriculum) | Detailed HTML, CSS, JavaScript, Node.js, database, and React foundations with projects between lessons |
+| [Full Stack Open](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io) | Modern React, APIs, testing, containers, GraphQL, React Native, and CI/CD material |
+| [RealWorld](https://github.com/realworld-apps/realworld) | Compare different frontend and backend implementations against one product and API contract |
+| [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x) | Rebuild databases, shells, Git, containers, networking tools, and other systems from first principles |
+| [System Design Primer](https://github.com/donnemartin/system-design-primer) | Review scalability, caching, queues, databases, and system-design tradeoffs |
+| [LLMs from Scratch](https://github.com/rasbt/LLMs-from-scratch) | Understand transformer and LLM internals through executable Python and PyTorch code |
+| [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) | Build basic generative-AI applications before adding production evaluation and safety |
+| [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) | Compare agent patterns, tool use, planning, memory, and multi-agent workflows |
+| [Anthropic courses](https://github.com/anthropics/courses) | Work through API, prompting, evaluation, and tool-use examples from a model provider |
 
-## How each project works
+## Search demand checked
 
-Every folder under `projects/` keeps the task beside the runnable code. Small browser projects run from the project root; later systems keep the application under `starter/`.
+The wording and stack were checked against worldwide Google Trends comparisons for **9 September 2025–9 September 2026** and current ecosystem reports. Google Trends values are relative within each comparison, not absolute keyword volume.
+
+- [Role comparison](https://trends.google.com/trends/explore?date=2025-09-09%202026-09-09&q=full%20stack%20development,backend%20development,frontend%20development,AI%20engineering,vibe%20coding): `AI engineering` had the strongest relative interest among those exact phrases. The README still starts with full-stack because the projects teach the web, data, and operations work that production AI depends on.
+- [Stack comparison](https://trends.google.com/trends/explore?date=2025-09-09%202026-09-09&q=TypeScript,Python,Next.js,FastAPI,Spring%20Boot): Python was much broader than the framework terms. TypeScript remains the default implementation; Python and Spring Boot are explicit backend routes instead of hidden keywords.
+- [AI coding comparison](https://trends.google.com/trends/explore?date=2025-09-09%202026-09-09&q=Claude%20Code,Cursor,Codex,AI%20coding%20agent,vibe%20coding): product names carried more relative interest than the generic phrases. The repository stays tool-neutral and links to current tool workflows.
+- [AI product comparison](https://trends.google.com/trends/explore?date=2025-09-09%202026-09-09&q=AI%20agents,RAG,MCP,LLM%20evaluation,AI%20engineering): `MCP` is an ambiguous acronym, so it is used only where the Model Context Protocol is actually taught.
+- [GitHub Octoverse 2025](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/) reported TypeScript as GitHub's most-used language and strong Python growth. [Stack Overflow's 2025 survey](https://survey.stackoverflow.co/2025/technology) showed substantial Docker growth; its [AI section](https://survey.stackoverflow.co/2025/ai) also explains why these projects emphasize tests and review around generated code.
+
+This is a dated editorial check, not a promise that search demand will stay fixed. Query links are included so anyone can rerun the comparison.
+
+## How a project works
 
 ```text
 projects/03-issue-api/
-├── README.md          # route through the project
+├── README.md          # run commands, sources, and next project
 ├── brief.md           # user, problem, constraints
 ├── acceptance.md      # observable definition of done
-├── exercises.md       # deliberate break/fix and extension tasks
-├── starter/           # runnable application, not pseudocode
-└── tests/             # black-box checks for the finished product
+├── exercises.md       # break/fix and extension work
+├── starter/           # runnable application
+└── tests/             # black-box checks
 ```
 
-The loop is simple:
+Use this loop:
 
 1. Run the starter and use it before changing code.
-2. Read the brief and write your own implementation plan.
-3. Build one vertical slice at a time.
-4. Run the project checks and manually test the failure cases.
-5. Deploy it and save the proof in `.progress.json`.
-6. Write five lines: what broke, what you measured, and what you would change.
+2. Read the brief and acceptance checks.
+3. Build one vertical slice.
+4. Run the checks and reproduce failure cases yourself.
+5. Deploy it and save the URL or screenshot in `.progress.json`.
+6. Write what broke, what you measured, and what you would change.
 
-## Use AI without giving up engineering
+[`ROADMAP.md`](./ROADMAP.md) contains every deliverable. `pnpm next` finds the next unfinished project. [`RESOURCES.md`](./RESOURCES.md) is the complete learning index.
 
-Use Codex, Claude Code, Copilot, Cursor, or another coding agent. The repository does not grade prompts. It grades the software.
+## Using coding agents
 
-For every AI-assisted change:
+Use Codex, Claude Code, Copilot, Cursor, or another coding agent. Give it the brief and acceptance checks, ask it to inspect the existing code, and review the resulting diff. The repository checks behavior, not prompts.
 
-- Start from a written task with inputs, outputs, constraints, and forbidden changes.
-- Ask the agent to inspect existing code before proposing edits.
-- Keep the diff small enough to review.
-- Require tests for changed behavior.
-- Run the software yourself and inspect logs, network calls, migrations, and generated SQL.
-- Record assumptions that the agent made incorrectly.
-- Never let an agent run destructive production commands or approve its own write actions.
-
-The full loop is in [`playbook/ai-assisted-development.md`](./playbook/ai-assisted-development.md).
-
-## Choose your route
-
-- **New to full-stack:** complete 01 → 08 in order.
-- **Frontend developer:** start at 02, then do 03, 04, 06, 07, 08.
-- **Backend developer:** start at 03, but complete 02 before 04.
-- **Already shipping SaaS:** run the project 04 checks. If they feel routine, start at 06.
-- **Here for AI engineering:** do 03, 06, 07, and 08. Production AI still depends on APIs, data, authorization, and operations.
-
-## What this repository deliberately avoids
-
-- Ten disconnected toy apps with no operational depth.
-- Framework tours that stop after CRUD.
-- Prompt collections presented as AI engineering.
-- Copy-paste authentication, billing, or agent code nobody can explain.
-- “Vibe coding” where generated code is accepted without tests, review, or runtime evidence.
-- Certificates, lectures, grades, and instructor language.
-
-## References
-
-The links are selected for the point where they become useful, not dumped into one giant list:
-
-- [`references/web-and-frontend.md`](./references/web-and-frontend.md)
-- [`references/backend-and-data.md`](./references/backend-and-data.md)
-- [`references/realtime-and-systems.md`](./references/realtime-and-systems.md)
-- [`references/delivery-and-operations.md`](./references/delivery-and-operations.md)
-- [`references/ai-product-engineering.md`](./references/ai-product-engineering.md)
-- [`references/ai-assisted-development.md`](./references/ai-assisted-development.md)
-
-TypeScript is the default path. Project 03 includes equivalent [Spring Boot and FastAPI routes](./projects/03-issue-api/alternative-backends.md) with the same API contract and tests, so backend developers can use Java or Python without splitting the product into three unrelated courses.
-
-## Completion
-
-You are done when all eight products have working URLs, automated checks, screenshots or short demos, and a short engineering note. Stars, badges, and hours watched do not count.
+Never let an agent approve its own production write, hide a migration, or replace runtime evidence with a confident explanation. The working loop is in [`playbook/ai-assisted-development.md`](./playbook/ai-assisted-development.md).
 
 ## Contributing
 
-Fix dead links, improve a failing starter, add a better test, or propose a project that exercises a missing production skill. Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening a pull request.
+Fix a dead link, improve a starter, add a missing test, or propose a production skill that the eight projects do not cover. Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening a pull request.
 
-## License
-
-MIT
+MIT licensed.
