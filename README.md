@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/project-ladder.svg" alt="Full-stack engineering roadmap with eight projects from HTML and CSS to production AI agents" width="100%" />
+  <img src="assets/fullstack-engineering-poster.jpg" alt="Build the whole thing: a climber crossing a mountain ridge above the clouds" width="100%" />
 </p>
 
 # Full-Stack Engineering Roadmap — From HTML to Production AI
