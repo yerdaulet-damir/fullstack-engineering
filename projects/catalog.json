@@ -1,0 +1,10 @@
+[
+  { "id": "01", "slug": "launch-page", "title": "Launch page", "command": "pnpm --filter @modern-fullstack/launch-page dev" },
+  { "id": "02", "slug": "data-dashboard", "title": "Data dashboard", "command": "pnpm --filter @modern-fullstack/data-dashboard dev" },
+  { "id": "03", "slug": "issue-api", "title": "Issue API", "command": "pnpm --filter @modern-fullstack/issue-api dev" },
+  { "id": "04", "slug": "issue-tracker", "title": "Full-stack issue tracker", "command": "pnpm --filter @modern-fullstack/issue-tracker dev" },
+  { "id": "05", "slug": "live-board", "title": "Live board", "command": "pnpm --filter @modern-fullstack/live-board dev" },
+  { "id": "06", "slug": "team-saas", "title": "Team SaaS", "command": "pnpm --filter @modern-fullstack/team-saas dev" },
+  { "id": "07", "slug": "support-copilot", "title": "Support copilot", "command": "pnpm --filter @modern-fullstack/support-copilot dev" },
+  { "id": "08", "slug": "production-operator", "title": "Production operator", "command": "pnpm --filter @modern-fullstack/production-operator dev" }
+]

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Production Full-Stack Engineering with AI</title>
+  <desc id="desc">Eight projects progress from a web interface through backend systems to a production AI operator.</desc>
+  <rect width="1280" height="420" rx="28" fill="#f2efe7"/>
+  <rect width="1280" height="14" fill="#ff5a36"/>
+  <text x="64" y="82" fill="#161616" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="3">8 RUNNABLE PROJECTS · ONE PRODUCT</text>
+  <text x="64" y="154" fill="#161616" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800">Production Full-Stack Engineering with AI</text>
+  <text x="64" y="202" fill="#4a4a46" font-family="Arial, Helvetica, sans-serif" font-size="24">Frontend → API → PostgreSQL → realtime → SaaS → AI operator</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="64" y="260" width="266" height="96" rx="14" fill="#161616"/>
+    <text x="88" y="296" fill="#ffffff" font-size="18" font-weight="700">01–02 · INTERFACE</text>
+    <text x="88" y="328" fill="#c9c8c2" font-size="17">browser · React · TypeScript</text>
+    <rect x="350" y="260" width="266" height="96" rx="14" fill="#2854d7"/>
+    <text x="374" y="296" fill="#ffffff" font-size="18" font-weight="700">03–04 · APPLICATION</text>
+    <text x="374" y="328" fill="#dde5ff" font-size="17">HTTP · SQL · auth</text>
+    <rect x="636" y="260" width="266" height="96" rx="14" fill="#f3c33b"/>
+    <text x="660" y="296" fill="#161616" font-size="18" font-weight="700">05–06 · SYSTEM</text>
+    <text x="660" y="328" fill="#4b3c12" font-size="17">realtime · jobs · tenants</text>
+    <rect x="922" y="260" width="294" height="96" rx="14" fill="#ff5a36"/>
+    <text x="946" y="296" fill="#ffffff" font-size="18" font-weight="700">07–08 · AI IN PROD</text>
+    <text x="946" y="328" fill="#fff0eb" font-size="17">RAG · evals · tools · approval</text>
+  </g>
+  <text x="1216" y="392" text-anchor="end" fill="#6a6760" font-family="Arial, Helvetica, sans-serif" font-size="15">github.com/yerdaulet-damir</text>
+</svg>

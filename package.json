@@ -1,0 +1,12 @@
+{
+  "name": "modern-fullstack-projects",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "doctor": "node scripts/doctor.mjs",
+    "next": "node scripts/next.mjs",
+    "check:catalog": "node --test tests/catalog.test.mjs",
+    "check:starters": "pnpm --recursive --if-present run check:starter"
+  }
+}

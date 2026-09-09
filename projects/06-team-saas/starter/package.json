@@ -1,0 +1,9 @@
+{
+  "name": "@modern-fullstack/team-saas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/demo.mjs",
+    "check:starter": "node --test test/*.test.mjs"
+  }
+}

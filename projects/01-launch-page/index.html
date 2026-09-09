@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tempo gives a team one clear priority for the day." />
+    <title>Tempo — One clear priority</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Tempo home">Tempo<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#benefits">Benefits</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">A calmer start to the workday</p>
+        <h1 id="hero-title">Give the team one clear priority.</h1>
+        <p class="lede">Tempo turns scattered plans into a daily page everyone can read in two minutes.</p>
+
+        <form class="signup" id="signup-form" novalidate>
+          <label for="email">Work email</label>
+          <div class="signup-row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+            <button type="submit">Join the preview</button>
+          </div>
+          <p class="form-message" id="form-message" aria-live="polite">No spam. One launch email.</p>
+        </form>
+      </section>
+
+      <section class="benefits" id="benefits" aria-labelledby="benefits-title">
+        <div>
+          <p class="eyebrow">Built for focus</p>
+          <h2 id="benefits-title">Less status hunting.</h2>
+        </div>
+        <ul class="benefit-grid">
+          <li><strong>One daily brief</strong><span>Decisions, owners, and deadlines in one view.</span></li>
+          <li><strong>Quiet by default</strong><span>No feed to refresh and no streak to maintain.</span></li>
+          <li><strong>Clear ownership</strong><span>Every priority has one named person.</span></li>
+        </ul>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-title">Before you join</h2>
+        <details>
+          <summary>Is Tempo available now?</summary>
+          <p>No. This starter represents a preview signup page.</p>
+        </details>
+        <details>
+          <summary>Does this form send data?</summary>
+          <p>No. The starter keeps demo submissions in the current browser only.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer><p>© <span id="year">2026</span> Tempo. Demo project.</p></footer>
+  </body>
+</html>

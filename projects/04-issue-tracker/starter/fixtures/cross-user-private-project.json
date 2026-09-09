@@ -1,0 +1,5 @@
+{
+  "actorEmail": "alice@example.test",
+  "targetProjectId": "project-bob",
+  "expectedStatus": 404
+}

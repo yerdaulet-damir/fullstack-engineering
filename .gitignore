@@ -1,0 +1,11 @@
+.DS_Store
+.progress.json
+node_modules/
+dist/
+.next/
+coverage/
+.env
+.env.*
+!.env.example
+projects/**/package-lock.json
+projects/**/pnpm-lock.yaml

@@ -1,0 +1,11 @@
+{
+  "name": "01-launch-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --watch server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test",
+    "check:starter": "node --test tests/starter.test.mjs"
+  }
+}

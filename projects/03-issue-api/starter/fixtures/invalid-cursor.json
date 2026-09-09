@@ -1,0 +1,5 @@
+{
+  "cursor": "not-a-valid-cursor",
+  "expectedStatus": 400,
+  "expectedCode": "INVALID_CURSOR"
+}

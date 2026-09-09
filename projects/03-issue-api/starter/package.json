@@ -1,0 +1,16 @@
+{
+  "name": "@modern-fullstack/issue-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.mjs",
+    "start": "node src/server.mjs",
+    "test": "node --test",
+    "check:starter": "node --test"
+  },
+  "dependencies": {
+    "@fastify/swagger": "^9.0.0",
+    "fastify": "^5.0.0",
+    "pg": "^8.0.0"
+  }
+}

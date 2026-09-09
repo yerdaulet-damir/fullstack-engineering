@@ -1,0 +1,13 @@
+{
+  "currentProject": 1,
+  "projects": {
+    "01": { "status": "not-started", "url": "", "proof": "" },
+    "02": { "status": "not-started", "url": "", "proof": "" },
+    "03": { "status": "not-started", "url": "", "proof": "" },
+    "04": { "status": "not-started", "url": "", "proof": "" },
+    "05": { "status": "not-started", "url": "", "proof": "" },
+    "06": { "status": "not-started", "url": "", "proof": "" },
+    "07": { "status": "not-started", "url": "", "proof": "" },
+    "08": { "status": "not-started", "url": "", "proof": "" }
+  }
+}
